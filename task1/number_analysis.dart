@@ -64,12 +64,14 @@ void main() {
   int min = findMin(numbers);
   int sum = calculateSum(numbers);
   double avg = calculateAverage(numbers);
+  int negativeCount = countNegatives(numbers);
 
   print('Number Analysis Results');
   print('========================');
   print('Numbers: $numbers');
   print('Maximum value : $max');
   print('Minimum value : $min');
+  print('Negative numbers: $negativeCount');
   print('Sum           : $sum');
   print('Average       : $avg');
 }
