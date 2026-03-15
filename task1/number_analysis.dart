@@ -5,6 +5,11 @@ final numbers = <int>[34, -7, 89, 12, -45, 67, 3, 100, -2, 55];
 
 // Function to find the maximum number in a list
 int findMax(List<int> numbers) {
+  if (numbers.isEmpty) {
+    print("Error: list is empty.");
+    return 0;
+  }
+
   int max = numbers[0];
 
   for (int n in numbers) {
@@ -18,6 +23,11 @@ int findMax(List<int> numbers) {
 
 // Function to find the minimum number in a list
 int findMin(List<int> numbers) {
+  if (numbers.isEmpty) {
+    print("Error: list is empty.");
+    return 0;
+  }
+
   int min = numbers[0];
 
   for (int n in numbers) {
