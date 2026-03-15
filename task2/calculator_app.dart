@@ -91,3 +91,46 @@ Future<void> main() async {
   print('All calculations complete.');
 }
 
+// ANSWER TO CONCEPTUAL QUESTIONS
+
+/*
+Q6. What is the difference between a synchronous function and an asynchronous 
+function in Dart? In your Calculator class, why is divide() synchronous while 
+computeAsync() is asynchronous?
+ANSWER.
+  A synchronous function runs immediately and returns a result directly.
+  An asynchronous function may take time to complete and returns a Future.
+  In this program divide() is synchronous because it performs a simple
+  calculation instantly. computeAsync() is asynchronous because it
+  simulates a delay using Future.delayed().
+
+Q7. Explain the purpose of the await keyword in Dart. What happens if you forget 
+to use await when calling an async function that returns a Future? What does your 
+program print instead of the result?
+ANSWER.
+  The await keyword pauses execution until the Future completes.
+  If we forget to use await, the program will print a Future object
+  instead of the actual result.
+
+Q8. What is the purpose of the try-catch block in your displayResult() method? What 
+would happen if you removed it and then called displayResult(10, 0, 'divide')?
+ANSWER.
+  The try-catch block prevents the program from crashing if an error
+  occurs. If divide by zero happens, the exception is caught and an
+  error message is printed instead of terminating the program.
+
+Q9. Why is it good design to have divide() throw an ArgumentError rather than simply 
+returning 0 or printing an error inside the divide() method itself? What principle of 
+function design does this reflect?
+ANSWER.
+  Throwing an ArgumentError is good design because it informs the caller
+  that the input is invalid. It separates error handling from the
+  calculation logic and keeps the function clean and reusable.
+
+Q10. What does the async keyword on main() allow you to do? Could this assignment have been 
+written without making main() async? Explain your answer.
+ANSWER.
+  The async keyword on main() allows us to use await inside main.
+  Without async, we would not be able to wait for asynchronous
+  operations like displayResult().
+*/
