@@ -46,6 +46,18 @@ double calculateAverage(List<int> numbers) {
   return sum / numbers.length;
 }
 
+// Function to count negative numbers
+int countNegatives(List<int> numbers) {
+  int count = 0;
+
+  for (int n in numbers) {
+    if (n < 0) {
+      count++;
+    }
+  }
+
+  return count;
+}
 void main() {
 
   int max = findMax(numbers);
