@@ -1,4 +1,4 @@
-# Dart Fundamentals Assignment
+# Dart Fundamentals project
 
 Name: Mubarek Jemal  
 Course: Mobile Application Development using Flutter  
@@ -13,3 +13,5 @@ This program implements a Calculator class using object-oriented
 programming. It performs arithmetic operations asynchronously using
 Future, async, and await, and includes exception handling for
 division by zero.
+
+Project completed and submitted.
